@@ -48,6 +48,10 @@ yabai -m config                                 \
 yabai -m config --space 1                       \
     layout                       float          \
 
+# float certain windows
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^Barrier$" manage=off
 
 # sketchybar
 yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"

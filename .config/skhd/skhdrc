@@ -101,7 +101,13 @@ ctrl - 0 : yabai -m space --balance
 lshift + ralt - t     : yabai -m window --grid 1:1:0:0:1:1
 
 # make floating window fill left-half of screen
-# shift + alt - left   : yabai -m window --grid 1:2:0:0:1:1
+lshift + ralt - a : yabai -m window --grid 1:2:0:0:1:1
+lshift + ralt - d : yabai -m window --grid 1:2:1:0:1:1
+lshift + ralt - w : yabai -m window --grid 2:1:0:0:1:1
+lshift + ralt - s : yabai -m window --grid 2:1:0:1:1:1
+
+# fill right 2/3
+lshift + ralt - f : yabai -m window --grid 1:3:1:0:2:1
 
 # create desktop, move window and follow focus - uses jq for parsing json (brew install jq)
 # shift + cmd - n : yabai -m space --create && \

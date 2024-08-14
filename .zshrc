@@ -1,5 +1,5 @@
 export PATH="$PATH:/Users/pranav/Documents/code/tools/flutter/bin"
-export PATH="/bin:/usr/bin:/usr/local/bin:/sbin:$PATH"
+export PATH="/usr/local/bin:/bin:/usr/bin:/sbin:$PATH"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"

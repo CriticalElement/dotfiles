@@ -126,6 +126,7 @@ ralt - 6 : yabai -m space --focus 6
 ralt - 7 : yabai -m space --focus 7
 ralt - 8 : yabai -m space --focus 8
 ralt - 9 : yabai -m space --focus 9
+ralt - 0 : yabai -m space --focus 10
 
 # send window to desktop and follow focus
 ralt + rcmd - 1 : yabai -m window --space 1; yabai -m space --focus 1
@@ -133,6 +134,11 @@ ralt + rcmd - 2 : yabai -m window --space 2; yabai -m space --focus 2
 ralt + rcmd - 3 : yabai -m window --space 3; yabai -m space --focus 3
 ralt + rcmd - 4 : yabai -m window --space 4; yabai -m space --focus 4
 ralt + rcmd - 5 : yabai -m window --space 5; yabai -m space --focus 5
+ralt + rcmd - 6 : yabai -m window --space 6; yabai -m space --focus 6
+ralt + rcmd - 7 : yabai -m window --space 7; yabai -m space --focus 7
+ralt + rcmd - 8 : yabai -m window --space 8; yabai -m space --focus 8
+ralt + rcmd - 9 : yabai -m window --space 9; yabai -m space --focus 9
+ralt + rcmd - 0 : yabai -m window --space 10; yabai -m space --focus 10
 
 # focus monitor
 # ctrl + alt - z  : yabai -m display --focus prev

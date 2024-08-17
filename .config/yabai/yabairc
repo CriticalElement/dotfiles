@@ -52,6 +52,7 @@ yabai -m config --space 1                       \
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Barrier$" manage=off
+yabai -m rule --add app="^ColorSlurp$" manage=off
 
 # sketchybar
 yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"

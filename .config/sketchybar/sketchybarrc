@@ -63,7 +63,7 @@ do
                               click_script="yabai -m space --focus $sid" 
 done
 
-sketchybar --set space_ex.1 padding_left=-300
+sketchybar --set space_ex.1 padding_left=-999999
 
 sketchybar --hotload
 sketchybar --update

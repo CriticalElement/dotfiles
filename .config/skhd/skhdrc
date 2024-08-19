@@ -167,7 +167,7 @@ rshift + ralt - a : yabai -m window --resize left:20:0
 rshift + ralt - w : yabai -m window --resize top:0:20
 
 # set insertion point in focused container
-# ctrl + alt - h : yabai -m window --insert west
+# ctrl + cmd - h : yabai -m window --insert west
 
 # toggle window zoom
 # alt - d : yabai -m window --toggle zoom-parent

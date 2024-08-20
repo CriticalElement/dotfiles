@@ -36,7 +36,7 @@ done
 
 # consolidate space numbers and add a background
 sketchybar --add bracket spaces '/space\..*/'                          \
-           --set         spaces background.color=0x331a1b26            \
+           --set         spaces background.color=0xf21a1b26            \
                                 background.corner_radius=15            \
                                 blur_radius=12                         \
                                 background.height=30                    
@@ -70,7 +70,7 @@ sketchybar --set space_ex.1 padding_left=-999999
 
 # update defaults
 sketchybar --default                                                \
-                     background.color=0x331a1b26                    \
+                     background.color=0xf21a1b26                    \
                      blur_radius=12                                 \
                      background.corner_radius=15                    \
                      background.height=30                           \
@@ -85,13 +85,17 @@ sketchybar --default                                                \
 # time
 sketchybar --add item time right                                    \
            --set      time icon=󱑎                                   \
-                           label="$(date '+%I:%M %p')"
+                           label="$(date '+%I:%M %p')"              \
+                           script='./scripts/time.sh'               \
+                           update_freq=1
 
 # date
 # 󱨰
 sketchybar --add item date right                                    \
            --set      date icon=󱨰                                   \
-                           label="$(date '+%a %b %e')"
+                           label="$(date '+%a %b %e')"              \
+                           script='./scripts/date.sh'               \
+                           update_freq=10
 
 # finish config
 sketchybar --hotload

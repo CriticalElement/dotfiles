@@ -83,7 +83,7 @@ save_to_clipboard = true
 
 [window]
 decorations = "buttonless"
-dynamic_title = false
+dynamic_title = true
 opacity = 1
 
 [window.padding]

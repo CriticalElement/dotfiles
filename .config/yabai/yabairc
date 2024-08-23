@@ -58,5 +58,8 @@ yabai -m rule --add app="^ColorSlurp$" manage=off
 yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
 yabai -m signal --add event=window_created action="sketchybar --trigger windows_on_spaces"
 yabai -m signal --add event=window_destroyed action="sketchybar --trigger windows_on_spaces"
+yabai -m signal --add event=application_front_switched action="~/.config/sketchybar/scripts/title.sh"
+yabai -m signal --add event=window_focused action="~/.config/sketchybar/scripts/title.sh"
+yabai -m signal --add event=window_title_changed action="~/.config/sketchybar/scripts/title.sh" active=yes
 
 echo "yabai configuration loaded.."

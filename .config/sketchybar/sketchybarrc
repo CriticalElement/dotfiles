@@ -4,9 +4,9 @@ RED=0xFFBE425E
 GREEN=0xFF55AE44
 
 # main bar & defaults
-sketchybar --bar height=30        \
+sketchybar --bar height=54        \
                  margin=12        \
-                 y_offset=12      \
+                 y_offset=0       \
                  padding_left=0   \
                  padding_right=0  \
                  color=0x00000000
@@ -15,7 +15,8 @@ sketchybar --default updates=when_shown                             \
                      icon.font="Liga SFMono Nerd Font:Normal:14.0"  \
                      icon.color=0xFFFFFFFF                          \
                      label.font="Liga SFMono Nerd Font:Normal:14.0" \
-                     background.color=0x00000000
+                     background.color=0x00000000                    \
+                     y_offset=0
 
 # ~~ left items ~~
 
@@ -85,6 +86,24 @@ sketchybar --default                                                \
                      label.padding_right=12                         \
                      background.padding_left=18                     \
                      background.border_width=1
+
+
+# ~~ center items ~~
+
+# app title
+sketchybar --add item title center                                  \
+           --set      title label.padding_left=12                   \
+                            label="Title"                           \
+                            background.padding_left=0               \
+                            icon.padding_left=0                     \
+                            icon.padding_right=0                    \
+                            script='./scripts/title.sh'             \
+                            label.max_chars=52                      \
+                            scroll_texts=on                         \
+                            label.scroll_duration=200
+
+# sketchybar --subscribe title front_app_switched
+
 
 # ~~ right items ~~
 

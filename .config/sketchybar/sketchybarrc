@@ -98,9 +98,9 @@ sketchybar --add item title center                                  \
                             icon.padding_left=0                     \
                             icon.padding_right=0                    \
                             script='./scripts/title.sh'             \
-                            label.max_chars=52                      \
-                            scroll_texts=on                         \
-                            label.scroll_duration=200
+                            label.max_chars=54                      # \
+                            # scroll_texts=on                         \
+                            # label.scroll_duration=200
 
 # sketchybar --subscribe title front_app_switched
 

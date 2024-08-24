@@ -38,8 +38,17 @@ do
                               click_script="yabai -m space --focus $sid"
 done
 
+# create new space button
+sketchybar --add item new_space left                        \
+           --set      new_space icon.width=24               \
+                                label.padding_right=2       \
+                                icon.align=center           \
+                                icon.padding_right=2        \
+                                icon=+                      \
+                                click_script='./scripts/new_space.sh'
+
 # consolidate space numbers and add a background
-sketchybar --add bracket spaces '/space\..*/'                          \
+sketchybar --add bracket spaces '/space\..*/' new_space                \
            --set         spaces background.color=0xf21a1b26            \
                                 background.corner_radius=15            \
                                 background.border_width=1              \
@@ -145,5 +154,5 @@ sketchybar --add item battery right                                 \
                               update_freq=20
 
 # finish config
-sketchybar --hotload
+sketchybar --hotload on
 sketchybar --update

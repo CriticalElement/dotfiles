@@ -14,3 +14,6 @@ export NVM_DIR="$HOME/.nvm"
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh --config ~/oh-my-posh/config.omp.json)"
 fi
+
+preexec() { print -Pn "\e]0;$1\a" }
+precmd() { print -PN "\e]0;Alacritty\a" }

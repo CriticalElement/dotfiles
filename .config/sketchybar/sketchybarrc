@@ -98,7 +98,8 @@ sketchybar --add item title center                                  \
                             icon.padding_left=0                     \
                             icon.padding_right=0                    \
                             script='./scripts/title.sh'             \
-                            label.max_chars=54                      # \
+                            background.border_color=0x77ADADAD      \
+                            label.max_chars=53                      # \
                             # scroll_texts=on                         \
                             # label.scroll_duration=200
 

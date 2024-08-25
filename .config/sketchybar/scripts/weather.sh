@@ -1,3 +1,5 @@
+# adapted from https://github.com/weirane/dotfiles/blob/macos/dotconfig/sketchybar/plugins/weather.sh
+
 get_icon() {
 if [[ $is_day == 1 ]]; then
     case $code in

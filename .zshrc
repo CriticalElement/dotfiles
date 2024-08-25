@@ -1,4 +1,4 @@
-export PATH="$PATH:/Users/pranav/Documents/code/tools/flutter/bin"
+export PATH="$PATH:$HOME/Documents/code/tools/flutter/bin"
 export PATH="/usr/local/bin:/bin:/usr/bin:/sbin:$PATH"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
@@ -16,4 +16,7 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
 fi
 
 preexec() { print -Pn "\e]0;$1\a" }
-precmd() { print -PN "\e]0;Alacritty\a" }
+
+if [ "$TERM" = "alacritty" ]; then
+  precmd() { print -PN "\e]0;Alacritty\a" }
+fi

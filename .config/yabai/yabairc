@@ -20,11 +20,11 @@ yabai -m config                                 \
     display_arrangement_order    default        \
     window_origin_display        default        \
     window_placement             second_child   \
-    window_zoom_persist          on             \
+    window_zoom_persist          off            \
     window_shadow                on             \
-    window_animation_duration    0.0            \
+    window_animation_duration    0.3            \
     window_animation_easing      ease_out_circ  \
-    window_opacity_duration      0.0            \
+    window_opacity_duration      0.15           \
     active_window_opacity        0.95           \
     normal_window_opacity        0.95           \
     window_opacity               on             \
@@ -58,8 +58,8 @@ yabai -m rule --add app="^ColorSlurp$" manage=off
 yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
 yabai -m signal --add event=window_created action="sketchybar --trigger windows_on_spaces"
 yabai -m signal --add event=window_destroyed action="sketchybar --trigger windows_on_spaces"
-yabai -m signal --add event=application_front_switched action="~/.config/sketchybar/scripts/title.sh"
-yabai -m signal --add event=window_focused action="~/.config/sketchybar/scripts/title.sh"
-yabai -m signal --add event=window_title_changed action="~/.config/sketchybar/scripts/title.sh" active=yes
+yabai -m signal --add event=application_front_switched action="sketchybar --trigger title_change"
+yabai -m signal --add event=window_focused action="sketchybar --trigger title_change"
+yabai -m signal --add event=window_title_changed action="sketchybar --trigger title_change" active=yes
 
 echo "yabai configuration loaded.."

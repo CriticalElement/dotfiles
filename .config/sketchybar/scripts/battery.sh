@@ -1,3 +1,5 @@
+# adapted from https://github.com/neutonfoo/dotfiles/blob/main/.config/sketchybar/plugins-laptop/battery.sh
+
 PERCENTAGE=$(pmset -g batt | grep -Eo "\d+%" | cut -d% -f1)
 CHARGING=$(pmset -g batt | grep 'AC Power')
 

@@ -1,7 +1,7 @@
 BLUE=0xFF1E6E77
 PURPLE=0xFFA753EA
 RED=0xFFBE425E
-GREEN=0xFF55AE44
+GREEN=0xFF7E9853
 
 # main bar & defaults
 sketchybar --bar height=54        \
@@ -100,6 +100,7 @@ sketchybar --default                                                \
 # ~~ center items ~~
 
 # app title
+sketchybar --add event title_change
 sketchybar --add item title center                                  \
            --set      title label.padding_left=12                   \
                             label="Title"                           \
@@ -112,7 +113,7 @@ sketchybar --add item title center                                  \
                             # scroll_texts=on                         \
                             # label.scroll_duration=200
 
-# sketchybar --subscribe title front_app_switched
+sketchybar --subscribe title title_change
 
 
 # ~~ right items ~~

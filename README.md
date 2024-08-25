@@ -7,6 +7,7 @@
 - [skhd](https://github.com/koekeishiya/skhd): hotkey daemon for macOS
 - [alacritty](https://github.com/alacritty/alacritty): cross-platform OpenGL terminal emulator
 - [oh-my-posh](https://github.com/JanDeDobbeleer/oh-my-posh): customizable cross platform shell prompt renderer
+- [sketchybar](https://github.com/FelixKratz/sketchybar): a macOS status bar replacement
 
 ## Caveats
 - Install the `SFMono Nerd Font` [here](https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized?tab=readme-ov-file#macos).

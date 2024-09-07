@@ -1,1 +1,1 @@
-sketchybar --set date label="$(date '+%a %b %e')"
+sketchybar --set date label="$(date '+%a %b %d')"

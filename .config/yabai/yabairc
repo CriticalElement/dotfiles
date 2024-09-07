@@ -22,11 +22,11 @@ yabai -m config                                 \
     window_placement             second_child   \
     window_zoom_persist          off            \
     window_shadow                on             \
-    window_animation_duration    0.3            \
+    window_animation_duration    0.0            \
     window_animation_easing      ease_out_circ  \
     window_opacity_duration      0.15           \
-    active_window_opacity        0.95           \
-    normal_window_opacity        0.95           \
+    active_window_opacity        0.92           \
+    normal_window_opacity        0.92           \
     window_opacity               on             \
     insert_feedback_color        0xffd75f5f     \
     split_ratio                  0.50           \
@@ -52,7 +52,11 @@ yabai -m config --space 1                       \
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Barrier$" manage=off
-yabai -m rule --add app="^ColorSlurp$" manage=off
+yabai -m rule --add app="^ColorSlurp$" manage=off opacity=1.0
+
+# disable opacity for certain apps
+yabai -m rule --add app="^Google Chrome$" opacity=1.0
+yabai -m rule --add app="^Figma$" opacity=1.0
 
 # sketchybar
 yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"

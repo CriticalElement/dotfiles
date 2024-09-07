@@ -5,6 +5,7 @@ export PATH="/usr/local/bin:/bin:/usr/bin:/sbin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
+export PATH="$PATH:$HOME/.spicetify"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

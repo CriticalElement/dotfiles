@@ -1,23 +1,30 @@
+import = [
+    "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
 live_config_reload = true
 shell = "/bin/zsh"
 
-[colors.normal]
-blue = "0x1E6E77"
+[env]
+TERM = "xterm-256color"
 
-[colors.bright]
-blue = "0x28939F"
+#[colors.normal]
+#blue = "0x1E6E77"
 
-[colors.primary]
-background = "0x1a1b26"
-foreground = "0xe0def4"
+#[colors.bright]
+#blue = "0x28939F"
 
-[colors.selection]
-background = "0x2A2738"
-text = "CellForeground"
+#[colors.primary]
+#background = "0x1a1b26"
+#foreground = "0xe0def4"
 
-[colors.vi_mode_cursor]
-cursor = "0x796268"
-text = "0x191724"
+#[colors.selection]
+#background = "0x2A2738"
+#text = "CellForeground"
+
+#[colors.vi_mode_cursor]
+#cursor = "0x796268"
+#text = "0x191724"
 
 [font]
 size = 15.0
@@ -56,7 +63,7 @@ save_to_clipboard = true
 [window]
 decorations = "buttonless"
 dynamic_title = true
-opacity = 1
+opacity = 0.92
 
 [window.padding]
 x = 16

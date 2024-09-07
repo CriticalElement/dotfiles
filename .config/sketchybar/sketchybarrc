@@ -49,11 +49,11 @@ sketchybar --add item new_space left                        \
 
 # consolidate space numbers and add a background
 sketchybar --add bracket spaces '/space\..*/' new_space                \
-           --set         spaces background.color=0xf21a1b26            \
+           --set         spaces background.color=0xEB1e1e2e            \
                                 background.corner_radius=15            \
                                 background.border_width=1              \
                                 background.border_color=$BLUE          \
-                                blur_radius=12                         \
+                                blur_radius=2                          \
                                 background.height=30                    
 
 # add space highlighter dot
@@ -85,8 +85,8 @@ sketchybar --set space_ex.1 padding_left=-999999
 
 # update defaults
 sketchybar --default                                                \
-                     background.color=0xf21a1b26                    \
-                     blur_radius=12                                 \
+                     background.color=0xEB1e1e2e                    \
+                     blur_radius=2                                  \
                      background.corner_radius=15                    \
                      background.height=30                           \
                      icon.padding_left=12                           \
@@ -132,7 +132,7 @@ sketchybar --add item date right                                    \
            --set      date icon=󱨰                                   \
                            icon.color=$RED                          \
                            background.border_color=$RED             \
-                           label="$(date '+%a %b %e')"              \
+                           label="$(date '+%a %b %d')"              \
                            script='./scripts/date.sh'               \
                            update_freq=10
 

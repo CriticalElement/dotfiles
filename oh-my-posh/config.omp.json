@@ -4,7 +4,7 @@
         "os": "#ACB0BE",
         "pink": "#F5BDE6",
         "lavender": "#B7BDF8",
-        "blueeee": "#8AADF4",
+        "#1E6E77eee": "#8AADF4",
         "green": "#dfffd6",
         "wight": "#FFFFFF",
         "text": "#494D64"
@@ -19,7 +19,7 @@
             "alignment": "left",
             "segments": [
                 {
-                    "background": "blue",
+                    "background": "#1E6E77",
                     "foreground": "#FFFFFF",
                     "powerline_symbol": "\ue0b4",
                     "leading_diamond": "\ue0b6",
@@ -28,8 +28,8 @@
                     "type": "os"
                 },
                 {
-                    "background": "blue",
-                    "foreground": "white",
+                    "background": "#1E6E77",
+                    "foreground": "#FFFFFF",
                     "powerline_symbol": "\ue0b4",
                     "style": "diamond",
                     "template": "{{ .UserName }}@{{ .HostName }}",
@@ -77,7 +77,7 @@
             "trailing_diamond": "\ue0b4",
             "segments": [
                 {
-                    "background": "blue",
+                    "background": "#1E6E77",
                     "foreground": "#FFFFFF",
                     "powerline_symbol": "\ue0b4",
                     "leading_diamond": "\ue0b6",
@@ -89,7 +89,7 @@
                     "type": "node"
                 },
                 {
-                    "background": "blue",
+                    "background": "#1E6E77",
                     "foreground": "#FFFFFF",
                     "powerline_symbol": "\ue0b4",
                     "leading_diamond": "\ue0b6",
@@ -101,7 +101,7 @@
                     "type": "go"
                 },
                 {
-                    "background": "blue",
+                    "background": "#1E6E77",
                     "foreground": "#FFFFFF",
                     "powerline_symbol": "\ue0b4",
                     "leading_diamond": "\ue0b6",
@@ -113,7 +113,7 @@
                     "type": "julia"
                 },
                 {
-                    "background": "blue",
+                    "background": "#1E6E77",
                     "foreground": "#FFFFFF",
                     "powerline_symbol": "\ue0b4",
                     "leading_diamond": "\ue0b4",
@@ -126,7 +126,7 @@
                     "type": "python"
                 },
                 {
-                    "background": "blue",
+                    "background": "#1E6E77",
                     "foreground": "#FFFFFF",
                     "powerline_symbol": "\ue0b4",
                     "leading_diamond": "\ue0b6",
@@ -139,7 +139,7 @@
                     "type": "ruby"
                 },
                 {
-                    "background": "blue",
+                    "background": "#1E6E77",
                     "foreground": "#FFFFFF",
                     "powerline_symbol": "\ue0b4",
                     "leading_diamond": "\ue0b6",

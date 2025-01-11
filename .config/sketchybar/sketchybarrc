@@ -109,6 +109,7 @@ sketchybar --add item title center                                  \
                             icon.padding_right=0                    \
                             script='./scripts/title.sh'             \
                             background.border_color=0x77ADADAD      \
+                            update_freq=1                           \
                             label.max_chars=54                      # \
                             # scroll_texts=on                         \
                             # label.scroll_duration=200
@@ -153,6 +154,12 @@ sketchybar --add item battery right                                 \
                               label="--%"                           \
                               script='./scripts/battery.sh'         \
                               update_freq=20
+
+
+sketchybar --add item title_proxy right                             \
+           --set      title_proxy y_offset=100                      \
+                                  label="Title"
+
 
 # finish config
 sketchybar --hotload on

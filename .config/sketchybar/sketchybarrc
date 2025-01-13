@@ -1,7 +1,8 @@
 BLUE=0xFF1E6E77
-PURPLE=0xFFA753EA
-RED=0xFFBE425E
-GREEN=0xFF7E9853
+ORANGE=0xFFCC7B6E
+PINK=0xFFD7448A
+RED=0xFFCE3A5B
+GREEN=0xFF638989
 
 # main bar & defaults
 sketchybar --bar height=54        \
@@ -52,14 +53,14 @@ sketchybar --add bracket spaces '/space\..*/' new_space                \
            --set         spaces background.color=0xEB1e1e2e            \
                                 background.corner_radius=15            \
                                 background.border_width=1              \
-                                background.border_color=$BLUE          \
+                                background.border_color=$PINK          \
                                 blur_radius=2                          \
                                 background.height=30                    
 
 # add space highlighter dot
 sketchybar --add item highlight_space left                      \
            --set      highlight_space width=22                  \
-                                      background.color=$BLUE    \
+                                      background.color=$PINK    \
                                       background.height=22      \
                                       background.corner_radius=11 \
                                       script='./scripts/highlight_space.sh'
@@ -108,7 +109,7 @@ sketchybar --add item title center                                  \
                             icon.padding_left=0                     \
                             icon.padding_right=0                    \
                             script='./scripts/title.sh'             \
-                            background.border_color=0x77ADADAD      \
+                            background.border_color=0xFFD3CDC5      \
                             update_freq=1                           \
                             label.max_chars=54                      # \
                             # scroll_texts=on                         \
@@ -122,8 +123,8 @@ sketchybar --subscribe title title_change
 # time
 sketchybar --add item time right                                    \
            --set      time icon=󱑎                                   \
-                           icon.color=$PURPLE                       \
-                           background.border_color=$PURPLE          \
+                           icon.color=$BLUE                       \
+                           background.border_color=$BLUE          \
                            label="$(date '+%I:%M %p')"              \
                            script='./scripts/time.sh'               \
                            update_freq=1
@@ -131,8 +132,8 @@ sketchybar --add item time right                                    \
 # date
 sketchybar --add item date right                                    \
            --set      date icon=󱨰                                   \
-                           icon.color=$RED                          \
-                           background.border_color=$RED             \
+                           icon.color=$GREEN                        \
+                           background.border_color=$GREEN            \
                            label="$(date '+%a %b %d')"              \
                            script='./scripts/date.sh'               \
                            update_freq=10
@@ -140,8 +141,8 @@ sketchybar --add item date right                                    \
 # weather
 sketchybar --add item weather right                                 \
            --set      weather icon=A                                \
-                              icon.color=$BLUE                      \
-                              background.border_color=$BLUE         \
+                              icon.color=$ORANGE                    \
+                              background.border_color=$ORANGE       \
                               label="--°F"                          \
                               script='./scripts/weather.sh'         \
                               update_freq=60
@@ -149,8 +150,8 @@ sketchybar --add item weather right                                 \
 # battery
 sketchybar --add item battery right                                 \
            --set      battery icon=                                \
-                              icon.color=$GREEN                     \
-                              background.border_color=$GREEN        \
+                              icon.color=$RED                   \
+                              background.border_color=$RED       \
                               label="--%"                           \
                               script='./scripts/battery.sh'         \
                               update_freq=20

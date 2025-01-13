@@ -57,6 +57,7 @@ yabai -m rule --add app="^ColorSlurp$" manage=off opacity=1.0
 # disable opacity for certain apps
 yabai -m rule --add app="^Google Chrome$" opacity=1.0
 yabai -m rule --add app="^Figma$" opacity=1.0
+yabai -m rule --add app="^Preview$" opacity=1.0
 
 # # sketchybar
 # yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
